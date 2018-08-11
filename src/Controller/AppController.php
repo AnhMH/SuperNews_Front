@@ -39,6 +39,7 @@ class AppController extends Controller
     public $session = null;
     public $current_url = '';
     public $BASE_URL = '';
+    public $_settings = array();
 
     /**
      * Initialization hook method.
@@ -94,6 +95,7 @@ class AppController extends Controller
         $this->action = strtolower($this->request->params['action']);
         $this->current_url = Router::url($this->here, true);
         $this->BASE_URL = Router::fullBaseUrl();
+        $this->_settings = $this->getSettings();
     }
 
     /**
@@ -122,6 +124,12 @@ class AppController extends Controller
         $this->set('BASE_URL', $this->BASE_URL);
         $this->set('isMobile', $this->isMobile());
         
+        // Set common data
+        $this->set('breaking_news', $this->_settings['breaking_news']);
+        $this->set('cates', $this->_settings['cates']);
+        $this->set('latest_post', $this->_settings['latest_post']);
+        $this->set('settings', $this->_settings['settings']);
+        
         // Set default layout
         $this->setLayout();
     }
@@ -139,5 +147,12 @@ class AppController extends Controller
     
     public function isMobile() {
         return $this->RequestHandler->isMobile();
+    }
+    
+    // Get list cates
+    public function getSettings() {
+        $data = array();
+        $data = Api::call(Configure::read('API.url_settings_general'), array());
+        return $data;
     }
 }

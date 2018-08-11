@@ -9,7 +9,7 @@
 <title>SuperNews</title>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" type="text/css" href="<?php echo $BASE_URL; ?>/css/style.css"/>	
+<link rel="stylesheet" type="text/css" href="<?php echo $BASE_URL; ?>/css/style.css?<?php echo time();?>"/>	
 <link rel="stylesheet" type="text/css" href="<?php echo $BASE_URL; ?>/css/font-awesome.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo $BASE_URL; ?>/css/prettyPhoto.css"/>	
 <link rel="stylesheet" type="text/css" href="<?php echo $BASE_URL; ?>/css/colors/default.css"/>

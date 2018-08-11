@@ -435,7 +435,7 @@ a:active {
 }
 #primary-nav ul li {
 	float: left;
-	background: url('images/seperator.png') no-repeat right center;
+	background: url('../images/seperator.png') no-repeat right center;
 }
 #primary-nav ul li:first-child a {
 	border-left: none;
@@ -475,7 +475,7 @@ a:active {
 	position: relative;
 }
 #secondary-nav ul li {
-	background: url('images/seperator.png') no-repeat right center;
+	background: url('../images/seperator.png') no-repeat right center;
 }
 #secondary-nav ul li a {
 	color: #333333;
@@ -1127,7 +1127,7 @@ a:active {
 	margin-right: 10px;
 }
 .entry-stars {
-	background: url(images/stars-small.png) no-repeat;
+	background: url(../images/stars-small.png) no-repeat;
 	display: inline-block;
 	width: 52px;
 	height: 12px;
@@ -1473,7 +1473,7 @@ a:active {
 }
 .pagination .prev:hover,
 .pagination .next:hover {
-	background-image: url(images/overlay.png);
+	background-image: url(../images/overlay.png);
 	background-repeat: repeat;
 	color: #ffffff !important;
 }

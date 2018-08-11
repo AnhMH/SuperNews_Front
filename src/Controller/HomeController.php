@@ -16,5 +16,8 @@ class HomeController extends AppController {
     public function index() {
         $data = Api::call(Configure::read('API.url_posts_gethomedata'), array());
         $this->set('data', $data);
+//        echo '<pre>';
+//        print_r($data);
+//        die();
     }
 }
