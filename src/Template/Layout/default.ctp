@@ -1,60 +1,102 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
+<html lang="vi">
+    <head>
+        <?php echo $this->element('Layout/head'); ?>
+    </head>
 
-	<?php echo $this->element('Layout/head'); ?>
+    <body class="style-games">
 
-</head>
+        <!-- Preloader -->
+        <div class="loader-mask">
+            <div class="loader">
+                <div></div>
+            </div>
+        </div>
 
-<body class="layout-narrow">
+        <!-- Bg Overlay -->
+        <div class="content-overlay"></div>
 
-	<!-- Page / Start -->	
-	<div id="page" class="hfeed site clearfix">
-		<!-- Masthead / Start -->
-		<?php echo $this->element('Layout/header'); ?>
-		<!-- Masthead / End -->
+        <!-- Sidenav -->    
+        <?php echo $this->element('Layout/header'); ?>
+        <!-- end sidenav -->
 
-		<!-- Site Main / Start -->
-		<main id="main" class="site-main container" role="main" style="display:block">
+        <main class="main oh" id="main">
 
-			<?php echo $this->fetch('content'); ?>
-			<!-- Primary / End -->
+            <?php echo $this->element('Layout/navbar'); ?>
 
-			<?php echo $this->element('Layout/sidebar'); ?>
+            <?php if (!empty($data['sliders'])): ?>
+                <!-- Hero Slider -->
+                <section class="hero-slider">
+                    <div id="owl-hero-slider" class="owl-carousel owl-theme">
+                        <?php foreach ($data['sliders'] as $s): ?>
+                            <div class="hero-slider__item">
+                                <article class="entry thumb">
+                                    <div class="entry__img-holder thumb__img-holder" style="background-image: url('<?php echo $s['image']; ?>');">
+                                        <div class="bottom-gradient"></div>
+                                        <div class="thumb-text-holder thumb-text-holder--2">   
+                                            <h2 class="thumb-entry-title">
+                                                <a href="<?php echo $BASE_URL . '/tin-tuc/' . $s['url']; ?>"><?php echo $s['name']; ?></a>
+                                            </h2>
+                                            <ul class="entry__meta">
+                                                <li class="entry__meta-author">
+                                                    <span>by</span>
+                                                    <a href="#">HoangAnhOnline</a>
+                                                </li>
+                                                <li class="entry__meta-date">
+                                                    <?php echo date('M d, Y', $s['created']); ?>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="<?php echo $BASE_URL . '/tin-tuc/' . $s['url']; ?>" class="thumb-url"></a>
+                                    </div>
+                                </article>
+                            </div>
+                        <?php endforeach; ?>
 
-			<div class="clearfix"></div>
 
-			<!-- Sidebar #2 / End -->		
+                    </div>
+                </section> <!-- end hero slider -->
+            <?php endif; ?>
 
-			<!-- Carousel-1 / Start -->
-			<?php echo $this->element('Layout/sectionvideo'); ?>
-			<!-- Carousel-1 / End -->
+            <div class="main-container container pt-24" id="main-container">
+                <!-- Ad Banner 970 -->
+                <div class="text-center pb-48">
+                    <a href="#">
+                        <img src="<?php echo $BASE_URL; ?>/img/content/placeholder_970.jpg" alt="">
+                    </a>
+                </div> 
 
-		</main>
-		<!-- Site Main / End -->
-		
-		<!-- Footer / Start -->	
-		<?php echo $this->element('Layout/footer'); ?>
-		<!-- Footer / End -->	
+                <!-- Content -->
+                <div class="row">
+                    <?php echo $this->fetch('content'); ?>
 
-	</div>
-	<!-- Page / End -->
+                    <!-- Sidebar -->
+                    <?php echo $this->element('Layout/sidebar'); ?>
+                    <!-- end sidebar -->
+                </div>
+            </div> <!-- end main container -->
 
-	<!-- JavaScripts -->
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery.js"></script>	
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery.matchHeight.js"></script>		
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/hoverIntent.js"></script>
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/superfish.js"></script>	
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery.sidr.min.js"></script>
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/retina.js"></script>
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery.sticky.js"></script>
-	<script type='text/javascript' src="<?php echo $BASE_URL;?>/js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="<?php echo $BASE_URL;?>/js/jquery.custom.js"></script>	
+            <!-- Footer -->
+            <?php echo $this->element('Layout/footer'); ?> 
+            <!-- end footer -->
 
-</body>
+            <div id="back-to-top">
+                <a href="#top" aria-label="Go to top"><i class="ui-arrow-up"></i></a>
+            </div>
+
+        </main> <!-- end main-wrapper -->
+
+
+        <!-- jQuery Scripts -->
+        <script src="<?php echo $BASE_URL; ?>/js/jquery.min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/bootstrap.min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/easing.min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/owl-carousel.min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/flickity.pkgd.min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/twitterFetcher_min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/jquery.newsTicker.min.js"></script>  
+        <script src="<?php echo $BASE_URL; ?>/js/modernizr.min.js"></script>
+        <script src="<?php echo $BASE_URL; ?>/js/scripts.js"></script>
+
+    </body>
 </html>

@@ -1,275 +1,119 @@
-<!-- Sidebar #1 / Start -->
-<div class="sidbear sidebar1 column">
+<aside class="col-lg-4 sidebar sidebar--right">
 
-    <div class="widget widget_latest_posts">
-
-        <h3 class="widget-title"><strong>Latest News</strong></h3>
-
-        <ul>
-            <li>
-                <a href="post.html"><img class="entry-thumbnail" src="http://placehold.it/160x90" alt="Post Title"/></a>
-                <h2 class="entry-title"><a href="post.html">Nullam dictum metus in metus auctor</a></h2>
-                <div class="entry-meta">
-                    <span class="entry-date">Sep. 15, 2014</span>
-                </div><!-- .entry-meta -->  
-            </li>
-
-            <li>
-                <a href="post.html"><img class="entry-thumbnail" src="http://placehold.it/160x90" alt="Post Title"/></a>
-                <h2 class="entry-title"><a href="post.html">Fusce volutpat elementum augue felis</a></h2>
-                <div class="entry-meta">
-                    <span class="entry-date">Sep. 15, 2014</span>
-                </div><!-- .entry-meta -->      
-            </li>
-
-            <li>
-                <a href="post.html"><img class="entry-thumbnail" src="http://placehold.it/160x90" alt="Post Title"/></a>
-                <h2 class="entry-title"><a href="post.html">Aenean efficitur enim vel ultrices laoreet</a></h2>
-                <div class="entry-meta">
-                    <span class="entry-date">Sep. 15, 2014</span>
-                </div><!-- .entry-meta -->      
-            </li>
-
-            <li>
-                <a href="post.html"><img class="entry-thumbnail" src="http://placehold.it/160x90" alt="Post Title"/></a>
-                <h2 class="entry-title"><a href="post.html">What are the benefits of eating oranges?</a></h2>
-                <div class="entry-meta">
-                    <span class="entry-date">Sep. 15, 2014</span>
-                </div><!-- .entry-meta -->      
-            </li>
-
-        </ul>
-    </div><!-- .widget .widget_latest_posts-->
-
-    <div class="widget widget_latest_comments">
-
-        <h3 class="widget-title"><strong>Opinions</strong></h3>
-
-        <ul>
-            <li>
-                <a href="post.html#comments">
-                    <img class="avatar" src="http://placehold.it/64x64" alt="Author Name"/>
-                    <h3 class="name">Jack Lenox</h3>
-                    <div class="comment">
-                        If you make yourself an ass, don't complain if people ride you.
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="post.html#comments">
-                    <img class="avatar" src="http://placehold.it/64x64" alt="Author Name"/>
-                    <h3 class="name">Kevin Koehler</h3>
-                    <div class="comment">
-                        Keep good men company and you shall be of the number.
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="post.html#comments">
-                    <img class="avatar" src="http://placehold.it/64x64" alt="Author Name"/>
-                    <h3 class="name">Ben Lowery</h3>
-                    <div class="comment">
-                        Experience is the father of wisdom and memory the mother.
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="post.html#comments">
-                    <img class="avatar" src="http://placehold.it/64x64" alt="Author Name"/>
-                    <h3 class="name">Neha Gajjar</h3>
-                    <div class="comment">
-                        Happy is the man who learns from the misfortunes of others.
-                    </div>
-                </a>
-            </li>														
-        </ul>
-
-    </div><!-- .widget .widget_latest_comments -->
-
-    <div class="widget">
-        <h3 class="widget-title"><strong>General Widget</strong></h3>
-        <ul>
-            <li><a href="#">Just Another List Item 1</a></li>
-            <li><a href="#">Just Another List Item 2</a></li>
-            <li><a href="#">Just Another List Item 3</a></li>                               
-        </ul>                       
-    </div><!-- .widget -->
-
-    <div class="widget widget_ads">
-        <h3 class="widget-title">Sponsor</h3>
-        <a href="#"><img src="http://placehold.it/160x600" alt=""/></a>
-    </div><!-- .widget .widget_ads -->
-
-</div>
-<!-- Sidebar #1 / End -->
-
-<!-- Sidebar #2 / Start -->
-<div id="secondary" class="widget-area widget-primary sidebar2 column" role="complementary">
-
-    <div class="widget widget_ads">
-        <h3 class="widget-title">Advertisement</h3>
-        <a href="http://www.theme-junkie.com/" target="_blank"><img src="http://placehold.it/300x250" alt="Ad Widget" /></a>
-    </div><!-- .widget .widget_ads -->
-
-    <div class="widget widget_social clearfix">
-        <ul>
-            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i><span><strong>5,600</strong></span><span>Followers</span></a></li>
-            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i><span><strong>1,986</strong></span><span>Fans</span></a></li>            
-            <li><a href="#" title="GooglePlus"><i class="fa fa-google-plus"></i><span><strong>1,300</strong></span><span>In Circle</span></a></li>
-            <li><a href="#" title="RSS"><i class="fa fa-rss"></i><span><strong>20,000</strong></span><span>Subscribers</span></a></li>
-        </ul>
-    </div><!-- .widget .widget_social -->
-
-    <div class="widget widget_newsletter">
-        <h3 class="widget-title">Newsletter</h3>
-        <div class="newsletter-container">
-            <p>Subscribe to our newsletter to receive breaking news by email.</p>    
-            <form role="form">
-                <input type="text" placeHolder="Enter your email...">
-                <button class="btn" type="button">Signup</button>
-            </form>
+    <!-- Widget Socials -->
+    <aside class="widget widget-socials">
+        <h4 class="widget-title">Let's hang out on social</h4>
+        <div class="socials socials--wide socials--large">
+            <div class="row row-16">
+                <div class="col">
+                    <a class="social social-facebook" href="#" title="facebook" target="_blank" aria-label="facebook">
+                        <i class="ui-facebook"></i>
+                        <span class="social__text">Facebook</span>
+                    </a><!--
+                    --><a class="social social-twitter" href="#" title="twitter" target="_blank" aria-label="twitter">
+                        <i class="ui-twitter"></i>
+                        <span class="social__text">Twitter</span>
+                    </a><!--
+                    --><a class="social social-youtube" href="#" title="youtube" target="_blank" aria-label="youtube">
+                        <i class="ui-youtube"></i>
+                        <span class="social__text">Youtube</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="social social-google-plus" href="#" title="google" target="_blank" aria-label="google">
+                        <i class="ui-google"></i>
+                        <span class="social__text">Google+</span>
+                    </a><!--
+                    --><a class="social social-instagram" href="#" title="instagram" target="_blank" aria-label="instagram">
+                        <i class="ui-instagram"></i>
+                        <span class="social__text">Instagram</span>
+                    </a><!--
+                    --><a class="social social-rss" href="#" title="rss" target="_blank" aria-label="rss">
+                        <i class="ui-rss"></i>
+                        <span class="social__text">Rss</span>
+                    </a>
+                </div>                
+            </div>            
         </div>
-    </div><!-- .widget .widget_newsletter -->
+    </aside> <!-- end widget socials -->
 
-    <div class="widget widget_tabs">
+    <!-- Widget Popular Posts -->
+    <?php if (!empty($breaking_news)): ?>
+    
+    <aside class="widget widget-popular-posts">
+        <h4 class="widget-title"><?php echo __('LABEL_BREAKING_NEWS');?></h4>
+        <ul class="post-list-small">
+            <?php foreach ($breaking_news as $p): ?>
+            <li class="post-list-small__item">
+                <article class="post-list-small__entry clearfix">
+                    <div class="post-list-small__img-holder">
+                        <div class="thumb-container thumb-100">
+                            <a href="<?php echo $BASE_URL.'/tin-tuc/'.$p['url'];?>">
+                                <img data-src="<?php echo $p['image']; ?>" src="<?php echo $p['image']; ?>" alt="<?php echo $p['name']; ?>" class="post-list-small__img--rounded lazyload">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post-list-small__body">
+                        <h3 class="post-list-small__entry-title">
+                            <a href="<?php echo $BASE_URL.'/tin-tuc/'.$p['url'];?>"><?php echo $p['name']; ?></a>
+                        </h3>
+                        <ul class="entry__meta">
+                            <li class="entry__meta-author">
+                                <span>by</span>
+                                <a href="#">HoangAnhOnline</a>
+                            </li>
+                            <li class="entry__meta-date">
+                                <?php echo date('M d, Y', $p['created']); ?>
+                            </li>
+                        </ul>
+                    </div>                  
+                </article>
+            </li>
+            <?php endforeach; ?>
+            
+        </ul>           
+    </aside> 
+    <?php endif; ?>
+    <!-- end widget popular posts -->
 
-        <!-- Tabs Nav -->
-        <ul class="tabs-nav">
-            <li class="active"><a href="#tab1" title="Popular"><i class="fa fa-star"></i></a></li>
-            <li><a href="#tab2" title="Latest"><i class="fa fa-clock-o"></i></a></li>
-            <li><a href="#tab3" title="Comments"><i class="fa fa-comments"></i></a></li>        
-            <li><a href="#tab4" title="Tags"><i class="fa fa-tags"></i></a></li>
-        </ul>
-
-        <!-- Tabs Container -->
-        <div class="tabs-container">
-
-            <div class="tab-content" id="tab1">
-                <ul>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Nulla enim consequat amet congue</a></h2>
-                        <div class="entry-meta">16 Aug, 2014</div>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Will It Shred: iPad Becomes a Skateboard</a></h2>
-                        <div class="entry-meta">15 Aug, 2014</div>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Phasellus lorem aliquam</a></h2>
-                        <div class="entry-meta">14 Aug, 2014</div>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Sed do eiusmod tempor incididunt</a></h2>
-                        <div class="entry-meta">13 Aug, 2014</div>
-                    </li>                                                   
-                </ul>                   
+    <!-- Widget Reviews -->
+    <?php if (!empty($latest_post)): ?>
+    <aside class="widget widget-review-posts">
+        <h4 class="widget-title"><?php echo __('LABEL_LATEST_NEWS');?></h4>
+        <?php foreach ($latest_post as $p): ?>
+        <article class="entry">
+            <div class="entry__img-holder">
+                <a href="<?php echo $BASE_URL.'/tin-tuc/'.$p['url']; ?>">
+                    <div class="thumb-container thumb-60">
+                        <img data-src="<?php echo $p['image']; ?>" src="<?php echo $p['image']; ?>" class="entry__img lazyload" alt="<?php echo $p['name']; ?>">
+                        <!--<span class="entry-score">9.2</span>-->
+                    </div>
+                </a>
             </div>
 
-            <div class="tab-content" id="tab2">
-                <ul>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Fusce volutpat elementum augue felis</a></h2>
-                        <div class="entry-meta">16 Aug, 2014</div>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Etiam maximus lacinia posuere nisl</a></h2>
-                        <div class="entry-meta">16 Aug, 2014</div>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">Aenean efficitur enim vel ultrices laoreet</a></h2>
-                        <div class="entry-meta">16 Aug, 2014</div>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html" rel="bookmark"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Post Title" /></a>
-                        <h2 class="entry-title"><a href="post.html" rel="bookmark">What are the benefits of eating oranges?</a></h2>
-                        <div class="entry-meta">16 Aug, 2014</div>
-                    </li>                                                   
-                </ul>         
+            <div class="entry__body">
+                <div class="entry__header">                  
+                    <h2 class="entry__title">
+                        <a href="<?php echo $BASE_URL.'/tin-tuc/'.$p['url']; ?>"><?php echo $p['name']; ?></a>
+                    </h2>
+                    <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                            <span>by</span>
+                            <a href="#">HoangAnhOnline</a>
+                        </li>
+                        <li class="entry__meta-date">
+                            <?php echo date('M d, Y', $p['created']); ?>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </article>
+        <?php endforeach; ?>
+        <button class="btn btn-lg btn-light btn-wide load-more">
+            <span><?php echo __('LABEL_VIEW_MORE');?> <i class="ui-arrow-down"></i></span>
+        </button>
+    </aside> 
+    <?php endif; ?>
+    <!-- end widget reviews -->     
 
-            <div class="tab-content" id="tab3">
-                <ul>
-                    <li class="clearfix">
-                        <a href="post.html#comments"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Author Name" /></a>
-                        <a href="post.html#comments"><strong>Jack Lenox</strong><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum...</span></a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html#comments"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Author Name" /></a>
-                        <a href="post.html#comments"><strong>Kevin Koehler</strong><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum...</span></a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html#comments"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Author Name" /></a>
-                        <a href="post.html#comments"><strong>Ben Lowery</strong><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum...</span></a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="post.html#comments"><img class="entry-thumbnail" src="http://placehold.it/64x64" alt="Author Name" /></a>
-                        <a href="post.html#comments"><strong>Neha Gajjar</strong><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum...</span></a>
-                    </li>                                           
-                </ul>           
-            </div>   
-
-            <div class="tab-content" id="tab4">
-                <a href="#">WordPress</a>
-                <a href="#">Themes</a>
-                <a href="#">Plugins</a>
-                <a href="#">Hosting</a>
-                <a href="#">Web Design</a>
-                <a href="#">Web Dev</a>
-                <a href="#">Domain Name</a>
-                <a href="#">WP Engine</a>
-                <a href="#">Affiliates</a>
-                <a href="#">bbPress</a>         
-            </div>
-
-        </div>
-
-    </div><!-- .widget .widget_tabs -->
-
-    <div class="widget widget_ads">
-        <h3 class="widget-title">Advertisement</h3>  
-        <a href="http://www.theme-junkie.com/" target="_blank"><img src="http://placehold.it/300x250" alt="Ad Widget" /></a>
-    </div><!-- .widget .widget_ads -->
-
-    <div class="widget widget_twitter">
-        <h3 class="widget-title"><strong>Latest Tweets</strong></h3>
-        <ul>
-            <li>RT <a href="#">@envato</a>: <a href="#">#WordPress</a> 3.9.2 is now available as a security release. It is strongly advised to update immediately. <a href="#">http://t.co/PPcIPyrkZz</a> <span class="timestamp"><a href="#">3 hours ago</a></span></li>
-            <li>Heatwave Offer. Sign up for an annual plan and get 3 months of free WP Engine <a href="#">#WordPress</a> hosting! Code: "HeatWave14" <a href="#">http://t.co/bsg79FCgvy</a> <span class="timestamp"><a href="#">1 day ago</a></span></li>
-            <li>BOOM! Theme Junkie is now 5 years old and we've got some presents for you! <a href="#">http://t.co/koSdMC7duxy</a> <span class="timestamp"><a href="#">3 days ago</a></span></li>          
-        </ul>
-    </div><!-- .widget .widget_twitter -->
-
-    <div class="widget widget_125">
-        <h3 class="widget-title"><strong>Sponsors</strong></h3> 
-        <a href="#"><img src="http://placehold.it/125x125" alt=""/></a>
-        <a href="#"><img class="img-right" src="http://placehold.it/125x125" alt=""/></a>
-        <a href="#"><img src="http://placehold.it/125x125" alt=""/></a>
-        <a href="#"><img class="img-right" src="http://placehold.it/125x125" alt=""/></a>
-    </div><!-- .widget.widget_125 -->
-
-    <div class="widget">
-        <h3 class="widget-title"><strong>General Widget</strong></h3>
-        <ul>
-            <li><a href="#">Just Another List Item 1</a></li>
-            <li><a href="#">Just Another List Item 2</a></li>
-            <li><a href="#">Just Another List Item 3</a></li>                               
-        </ul>                       
-    </div><!-- .widget -->
-
-    <div class="widget widget_ads">
-        <h3 class="widget-title">Advertisement</h3>  
-        <a href="http://www.theme-junkie.com/" target="_blank"><img src="http://placehold.it/300x600" alt="Ad Widget" /></a>
-    </div><!-- .widget .widget_ads -->
-
-</div>
-<!-- Secondary / End -->
+</aside>

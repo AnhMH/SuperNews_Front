@@ -1,80 +1,100 @@
-<footer id="footer" class="container clearfix">
+<footer class="footer footer--dark">
+    <div class="container">
+        <div class="footer__widgets">
+            <div class="footer__widgets-top">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <a href="index.html">
+                            <img src="<?php echo $BASE_URL; ?>/img/logo_games_white.png" srcset="<?php echo $BASE_URL; ?>/img/logo_games_white.png 1x, <?php echo $BASE_URL; ?>/img/logo_games_white@2x.png 2x" class="logo__img" alt="">
+                        </a>
+                    </div>
 
-    <div class="footer-column footer-column-1">
-        <div class="widget">
-            <h3 class="widget-title">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div><!-- .widget -->
-    </div><!-- .footer-column .footer-column-1 -->
+                    <div class="col-md-6">              
+                        <div class="socials socials--large socials--nobase justify-content-md-end">
+                            <a href="#" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
+                            <a href="#" class="social social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>
+                            <a href="#" class="social social-google-plus" aria-label="google+"><i class="ui-google"></i></a>
+                            <a href="#" class="social social-youtube" aria-label="youtube"><i class="ui-youtube"></i></a>
+                            <a href="#" class="social social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="footer-column footer-column-2">
-        <div class="widget widget_posts_thumbnail">
-            <h3 class="widget-title">Popular Posts</h3>
-            <ul>
-                <li>
-                    <a href="post.html" rel="bookmark"><img src="http://placehold.it/52x52" class="entry-thumbnail" alt="Post Title" /></a>
-                    <a href="post.html" rel="bookmark">How to skateboard for beginners</a>
-                    <div class="entry-meta">
-                        <span class="entry-date">Sep. 15, 2014</span>
-                    </div>									
-                </li>					
-                <li>
-                    <a href="post.html" rel="bookmark"><img src="http://placehold.it/52x52" class="entry-thumbnail" alt="Post Title" /></a>
-                    <a href="post.html" rel="bookmark">Tips for getting started in travel writing</a>
-                    <div class="entry-meta">
-                        <span class="entry-date">Sep. 15, 2014</span>
-                    </div>	
-                </li>
-                <li>
-                    <a href="post.html" rel="bookmark"><img src="http://placehold.it/52x52" class="entry-thumbnail" alt="Post Title" /></a>
-                    <a href="post.html" rel="bookmark">New life for old building in East Rochester</a>
-                    <div class="entry-meta">
-                        <span class="entry-date">Sep. 15, 2014</span>
-                    </div>									
-                </li>												
+            <div class="row">
+
+                <div class="col-lg-2 col-md-6">
+                    <aside class="widget widget_nav_menu">
+                        <h4 class="widget-title">Cover Stories</h4>
+                        <ul>
+                            <li><a href="single-post-games.html">Why Horizon Zero Dawn</a></li>
+                            <li><a href="single-post-games.html">Superman</a></li>
+                            <li><a href="single-post-games.html">Best Nintendo Game</a></li>
+                            <li><a href="single-post-games.html">Kingdom Hearts 3</a></li>
+                            <li><a href="single-post-games.html">Dragon Ball</a></li>
+                            <li><a href="single-post-games.html">God of War</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget widget-twitter">
+                        <h4 class="widget-title">Latest Tweets</h4>
+                        <div class="tweets-container">
+                            <div id="tweets"></div>                  
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <aside class="widget widget_nav_menu">
+                        <h4 class="widget-title">Useful Links</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="single-post-games.html">Projects</a></li>
+                            <li><a href="single-post-games.html">Wordpress Themes</a></li>
+                            <li><a href="categories.html">Advertise</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget widget_tag_cloud">
+                        <h4 class="widget-title">Tags</h4>
+                        <div class="tagcloud">
+                            <a href="#">action</a>
+                            <a href="#">adventure</a>
+                            <a href="#">console</a>
+                            <a href="#">racing</a>
+                            <a href="#">RPG</a>
+                            <a href="#">strategy</a>
+                            <a href="#">top list</a>
+                            <a href="#">sport</a>
+                            <a href="#">PS4</a>
+                            <a href="#">Xbox</a>
+                            <a href="#">Virtual Life</a>
+                            <a href="#">Science Fiction</a>
+                        </div>
+                    </aside>
+                </div>
+
+            </div> <!-- end row -->
+        </div> <!-- end footer widgets -->
+    </div> <!-- end container -->
+
+    <div class="footer__bottom footer__bottom--dark">
+        <div class="container text-center">
+            <ul class="footer__nav-menu footer__nav-menu--1">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">News</a></li>
+                <li><a href="categories.html">Advertise</a></li>
+                <li><a href="shortcodes.html">Support</a></li>
+                <li><a href="shortcodes.html">Contact</a></li>
             </ul>
-        </div><!-- .widget .widget_posts_thumbnail -->
-    </div><!-- .footer-column .footer-column-2 -->
-
-    <div class="footer-column footer-column-3">
-        <div class="widget widget_twitter">
-            <h3 class="widget-title"><strong>Latest Tweets</strong></h3>
-            <ul>
-                <li>RT <a href="#">@envato</a>: <a href="#">#WordPress</a> 3.9.2 is now available as a security release. It is strongly advised to update immediately. <a href="#">http://t.co/PPcIPyrkZz</a> <span class="timestamp"><a href="#">3 hours ago</a></span></li>
-                <li>Heatwave Offer. Sign up for an annual plan and get 3 months of free WP Engine <a href="#">#WordPress</a> hosting! Code: "HeatWave14" <a href="#">http://t.co/bsg79FCgvy</a> <span class="timestamp"><a href="#">1 day ago</a></span></li>       
-            </ul>
-        </div><!-- .widget .widget_twitter -->
-    </div><!-- .footer-column .footer-column-3 -->
-
-    <div class="footer-column footer-column-4">
-        <div class="widget widget_newsletter">
-            <h3 class="widget-title">Newsletter</h3>
-            <p>Make sure you don't miss interesting happenings by joining our newsletter program. We don't do spam.</p>		
-            <form role="form">
-                <input type="text" placeHolder="Enter your email...">
-                <button class="btn" type="button">Signup</button>
-            </form>     
-        </div><!-- .widget .widget_newsletter -->
-    </div><!-- .footer-column .footer-column-4 -->							
-
-    <!-- Site Bottom / Start -->
-    <div id="site-bottom" class="container clearfix">
-
-        <nav id="footer-nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Subscribe</a></li>													
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Advertise</a></li>							
-                <li><a href="#">Privacy</a></li>
-            </ul>
-        </nav><!-- #footer-nav -->
-
-        <div class="copyright">
-            &copy; 2014 <a href="index.html">SuperNews</a> &middot; Designed by <a href="http://www.theme-junkie.com/">Theme Junkie</a>
-        </div><!-- .copyright -->
-
-    </div>
-    <!-- Site Bottom / End -->
-
+            <p class="copyright">
+                © 2018 Deus | Made by <a href="https://deothemes.com">DeoThemes</a>
+            </p>   
+        </div>            
+    </div> <!-- end footer bottom -->
 </footer>
