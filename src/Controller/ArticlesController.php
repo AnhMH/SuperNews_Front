@@ -21,6 +21,16 @@ class ArticlesController extends AppController {
         );
         $data = Api::call(Configure::read('API.url_posts_detail'), $param);
         $this->set('data', $data);
+        $this->set('breadcrumbs', array(
+            array(
+                'url' => $this->BASE_URL.'/danh-muc/'.$data['cate_url'],
+                'name' => $data['cate_name']
+            ),
+            array(
+                'url' => '',
+                'name' => $data['name']
+            )
+        ));
         if (!empty($data['name'])) {
             $this->set('pageTitle', $data['name']);
         }

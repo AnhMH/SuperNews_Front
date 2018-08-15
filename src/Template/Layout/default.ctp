@@ -4,7 +4,9 @@
         <?php echo $this->element('Layout/head'); ?>
     </head>
 
-    <body class="style-games">
+    <body class="style-games
+    <?php echo in_array($controller, array('articles')) ? ' bg-light style-games single-post' : ''; ?>  
+          ">
 
         <!-- Preloader -->
         <div class="loader-mask">
@@ -57,14 +59,45 @@
                     </div>
                 </section> <!-- end hero slider -->
             <?php endif; ?>
+            
+            <!-- Breadcrumbs -->
+            <?php if (!empty($breadcrumbs)): ?>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="<?php echo $BASE_URL;?>" class="breadcrumbs__url"><?php echo __('LABEL_HOME');?></a>
+                    </li>
+                    <?php foreach ($breadcrumbs as $b): ?>
+                    <?php if (!empty($b['url'])): ?>
+                    <li class="breadcrumbs__item">
+                        <a href="<?php echo $b['url'];?>" class="breadcrumbs__url"><?php echo $b['name'];?></a>
+                    </li>
+                    <?php else: ?>
+                    <li class="breadcrumbs__item breadcrumbs__item--current">
+                        <?php echo $b['name'];?>
+                    </li>
+                    <?php endif; ?>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <?php endif; ?>
+            
+
+            <?php if ($controller == 'articles' && !empty($data['image'])): ?>
+                <!-- Entry Image -->
+                <div class="thumb thumb--size-6">
+                    <div class="entry__img-holder thumb__img-holder" style="background-image: url('<?php echo $data['image']; ?>');">
+                    </div>
+                </div>
+            <?php endif; ?>
 
             <div class="main-container container pt-24" id="main-container">
                 <!-- Ad Banner 970 -->
-                <div class="text-center pb-48">
-                    <a href="#">
-                        <img src="<?php echo $BASE_URL; ?>/img/content/placeholder_970.jpg" alt="">
-                    </a>
-                </div> 
+                <!--                <div class="text-center pb-48">
+                                    <a href="#">
+                                        <img src="<?php echo $BASE_URL; ?>/img/content/placeholder_970.jpg" alt="">
+                                    </a>
+                                </div> -->
 
                 <!-- Content -->
                 <div class="row">

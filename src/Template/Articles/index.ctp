@@ -1,156 +1,139 @@
-<div class="herald-section container">
+<div class="col-lg-8 blog__content mb-72">
+    <div class="content-box content-box--top-offset">
 
-    <article id="post-<?php echo $data['id'];?>" class="herald-single post type-post status-publish format-standard has-post-thumbnail hentry">
-        <div class="row">
-            <div class="col-lg-9 col-md-9 col-mod-single col-mod-main">
-                <header class="entry-header">
-                    <span class="meta-category">
-                        <a href="<?php echo $BASE_URL;?>/danh-muc/<?php echo $data['cate_url']; ?>" class="herald-cat-<?php echo $data['cate_id']; ?>"><?php echo $data['cate_name']; ?></a>
-                    </span>
-                    <h1 class="entry-title h1"><?php echo $data['name']; ?></h1>			
-                    <div class="entry-meta entry-meta-single">
-                        <div class="meta-item herald-date">
-                            <span class="updated"><?php echo date('Y-m-d', $data['created']); ?></span>
-                        </div>
-                        <div class="meta-item herald-views">5,005 Views</div>
-                        <!--<div class="meta-item herald-rtime">2 Min Read</div>-->
-                        <div class="meta-item herald-reviews">
-                            <div class="review-type-star wp-review-show-total wp-review-total-star"> 
-                                <div class="review-star">
-                                    <div class="review-result-wrapper">
-                                        <i class="mts-icon-star"></i>
-                                        <i class="mts-icon-star"></i>
-                                        <i class="mts-icon-star"></i>
-                                        <i class="mts-icon-star"></i>
-                                        <i class="mts-icon-star"></i>
-                                        <div class="review-result" style="width:96%; color:#0288d1;">
-                                            <i class="mts-icon-star"></i>
-                                            <i class="mts-icon-star"></i>
-                                            <i class="mts-icon-star"></i>
-                                            <i class="mts-icon-star"></i>
-                                            <i class="mts-icon-star"></i>
-                                        </div><!-- .review-result -->
-                                    </div><!-- .review-result-wrapper -->
-                                </div><!-- .review-star -->
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <div class="herald-post-thumbnail herald-post-thumbnail-single">
-                    <span><img width="990" height="660" src="<?php echo $data['image']; ?>" class="attachment-herald-lay-single size-herald-lay-single wp-post-image" alt="" sizes="(max-width: 990px) 100vw, 990px"></span>
+        <!-- standard post -->
+        <article class="entry mb-0">
+
+            <div class="single-post__entry-header entry__header">
+                <ul class="entry__meta">
+                    <li class="entry__meta-category">
+                        <a href="<?php echo $BASE_URL . '/danh-muc/' . $data['cate_url']; ?>"><?php echo $data['cate_name']; ?></a>
+                    </li>              
+                </ul>
+                <h1 class="single-post__entry-title">
+                    <?php echo $data['name']; ?>
+                </h1>
+                <div class="entry__meta-holder">
+                    <ul class="entry__meta">
+                        <li class="entry__meta-author">
+                            <span>by</span>
+                            <a href="#">HoangAnhOnline</a>
+                        </li>
+                    </ul>
+
+                    <ul class="entry__meta">
+                        <li class="entry__meta-views">
+                            <i class="ui-eye"></i>
+                            <span>1356</span>
+                        </li>
+                        <li class="entry__meta-comments">
+                            <a href="#">
+                                <i class="ui-chat-empty"></i>13
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs herald-left">
-                        <div class="entry-meta-wrapper">
-                            <div class="meta-ad"></div>
-                            <div class="entry-meta-author">
-                                <div class="co-author">
-                                    <img src="https://mksdmcdn-9b59.kxcdn.com/herald/wp-content/uploads/2015/04/meks_1-150x150.jpg" width="112" height="112" alt="Patrick Callahan" class="avatar avatar-112 wp-user-avatar wp-user-avatar-112 alignnone photo">						
-                                    <a class="herald-author-name" href="https://demo.mekshq.com/herald?author_name=meks1">Patrick Callahan</a>
-                                    <a class="herald-author-twitter" href="https://twitter.com/mekshq" target="_blank">mekshq</a>
-                                </div> 
-                            </div>
-                            <div class="entry-meta entry-meta-single">
-                                <div class="meta-item herald-reviews">
-                                    <div class="review-type-star  wp-review-show-total wp-review-total-140 wp-review-total-star"> 
-                                        <div class="review-star">
-                                            <div class="review-result-wrapper">
-                                                <i class="mts-icon-star"></i>
-                                                <i class="mts-icon-star"></i>
-                                                <i class="mts-icon-star"></i>
-                                                <i class="mts-icon-star"></i>
-                                                <i class="mts-icon-star"></i>
-                                                <div class="review-result" style="width:96%; color:#0288d1;">
-                                                    <i class="mts-icon-star"></i>
-                                                    <i class="mts-icon-star"></i>
-                                                    <i class="mts-icon-star"></i>
-                                                    <i class="mts-icon-star"></i>
-                                                    <i class="mts-icon-star"></i>
-                                                </div><!-- .review-result -->
-                                            </div><!-- .review-result-wrapper -->
-                                        </div><!-- .review-star -->
+            </div> <!-- end entry header -->              
+
+            <div class="entry__article-wrap">
+
+                <div class="entry__article">
+                    <?php echo $data['content']; ?>
+                    <!-- tags -->
+                    <div class="entry__tags">
+                        <i class="ui-tags"></i>
+                        <span class="entry__tags-label">Tags:</span>
+                        <a href="#" rel="tag">mobile</a><a href="#" rel="tag">gadgets</a><a href="#" rel="tag">satelite</a>
+                    </div> <!-- end tags -->
+                </div> <!-- end entry article -->
+            </div> <!-- end entry article wrap -->
+
+
+            <!-- Newsletter Wide -->
+            <div class="newsletter-wide">
+                <div class="widget widget_mc4wp_form_widget">
+                    <div class="newsletter-wide__container">
+                        <div class="newsletter-wide__text-holder">
+                            <p class="newsletter-wide__text">
+                                <i class="ui-email newsletter__icon"></i>
+                                Subscribe for our daily news
+                            </p>
+                        </div>
+                        <div class="newsletter-wide__form">
+                            <form class="mc4wp-form" method="post">
+                                <div class="mc4wp-form-fields">
+                                    <div class="form-group">
+                                        <input type="email" name="EMAIL" placeholder="Your email" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-lg btn-color" value="Sign Up">
                                     </div>
                                 </div>
-                            </div>
-                            <?php echo $this->element('Post/meta_share', $data);?>
+                            </form>
+                        </div> 
+                    </div>         
+                </div>
+            </div> <!-- end newsletter wide -->
+
+            <!-- Prev / Next Post -->
+<!--            <nav class="entry-navigation">
+                <div class="clearfix">
+                    <div class="entry-navigation--left">
+                        <i class="ui-arrow-left"></i>
+                        <span class="entry-navigation__label">Previous Post</span>
+                        <div class="entry-navigation__link">
+                            <a href="#" rel="next">How to design your first mobile app</a>
                         </div>
                     </div>
-
-
-                    <div class="col-lg-10 col-md-10 col-sm-10">
-                        <div class="entry-content herald-entry-content">
-                            <div class="entry-headline h5">
-                                <?php echo $data['description'];?>
-                            </div>
-                            <?php echo $data['content'];?>
-                            
-                            <?php echo $this->element('Banner/728x90'); ?>
+                    <div class="entry-navigation--right">
+                        <span class="entry-navigation__label">Next Post</span>
+                        <i class="ui-arrow-right"></i>
+                        <div class="entry-navigation__link">
+                            <a href="#" rel="prev">Video Youtube format post. Made with WordPress</a>
                         </div>
                     </div>
+                </div>
+            </nav>-->
 
-                    <div id="extras" class="col-lg-12 col-md-12 col-sm-12">
-                        <div id="related" class="herald-related-wrapper">		
-                            <div class="herald-mod-wrap">
-                                <div class="herald-mod-head ">
-                                    <div class="herald-mod-title">
-                                        <h4 class="h6 herald-mod-h herald-color">You may also like</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="herald-related row row-eq-height">
-                                <?php if (!empty($data['relations'])): ?>
-                                <?php foreach ($data['relations'] as $p): ?>
-                                    <article class="herald-lay-f herald-lay-f1 post type-post status-publish format-standard has-post-thumbnail hentry">
-                                        <div class="herald-ovrld" style="height: 188px;">		
-                                            <div class="herald-post-thumbnail">
-                                                <a href="<?php echo $BASE_URL;?>/tin-tuc/<?php echo $p['url'];?>" title="<?php echo $p['name'];?>">
-                                                    <img width="300" height="200" src="<?php echo $p['image'];?>" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px">
-                                                </a>
-                                            </div>
+            <!-- Author -->
+            <div class="entry-author clearfix">
+                <img alt="" data-src="img/content/single/author.jpg" src="img/empty.png" class="avatar lazyload">
+                <div class="entry-author__info">
+                    <h6 class="entry-author__name">
+                        <a href="#">John Carpet</a>
+                    </h6>
+                    <p class="mb-0">But unfortunately for most of us our role as gardener has never been explained to us. And in misunderstanding our role, we have allowed seeds of all types, both good and bad, to enter our inner garden.</p>
+                </div>
+            </div>              
 
-                                            <div class="entry-header herald-clear-blur" style="height: 104px;">
-                                                <span class="meta-category">
-                                                    <a href="<?php echo $BASE_URL;?>/danh-muc/<?php echo $p['cate_url'];?>" class="herald-cat-<?php echo $p['cate_id'];?>"><?php echo $p['cate_name'];?></a>
-                                                </span>
-                                                <h2 class="entry-title h6">
-                                                    <a href="<?php echo $BASE_URL;?>/tin-tuc/<?php echo $p['url'];?>"><?php echo $p['name'];?></a>
-                                                </h2>
-                                                <div class="entry-meta">
-                                                    <div class="meta-item herald-date">
-                                                        <span class="updated"><?php echo date('Y-m-d', $p['created']);?></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                <?php endforeach; ?>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <div id="single-sticky" class="herald-single-sticky herald-single-wraper hidden-xs hidden-sm">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="herald-sticky-share">
-                                            <?php echo $this->element('Post/meta_share', $data);?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>					
-                        </div>
-                    </div>
-
+            <!-- Related Posts -->
+            <?php if (!empty($data['relations'])): ?>
+            <section class="section related-posts mt-40 mb-0">
+                <div class="title-wrap title-wrap--line title-wrap--pr">
+                    <h3 class="section-title"><?php echo __('LABEL_RELATED_POST');?></h3>
                 </div>
 
-            </div>
+                <!-- Slider -->
+                <div id="owl-posts-3-items" class="owl-carousel owl-theme owl-carousel--arrows-outside">
+                    <?php foreach ($data['relations'] as $rp): ?>
+                    <article class="entry thumb thumb--size-1">
+                        <div class="entry__img-holder thumb__img-holder" style="background-image: url('<?php echo $rp['image']; ?>');">
+                            <div class="bottom-gradient"></div>
+                            <div class="thumb-text-holder">   
+                                <h2 class="thumb-entry-title">
+                                    <a href="<?php echo $BASE_URL.'/tin-tuc/'.$rp['url'];?>"><?php echo $rp['name']; ?></a>
+                                </h2>
+                            </div>
+                            <a href="<?php echo $BASE_URL.'/tin-tuc/'.$rp['url'];?>" class="thumb-url"></a>
+                        </div>
+                    </article>
+                    <?php endforeach; ?>
+                </div> <!-- end slider -->
+            </section> 
+            <?php endif; ?>
+            <!-- end related posts -->            
 
+        </article> <!-- end standard post -->
 
-
-            <div class="herald-sidebar col-lg-3 col-md-3 herald-sidebar-right">
-                <?php echo $this->element('Layout/widget_categories'); ?>
-                <?php echo $this->element('Post/feature_post'); ?>		
-                <?php echo $this->element('Banner/300x316'); ?>
-            </div>
-        </div>	
-    </article>
+    </div> <!-- end content box -->
 </div>
