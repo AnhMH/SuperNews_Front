@@ -5,7 +5,7 @@
     </head>
 
     <body class="style-games
-    <?php echo in_array($controller, array('articles')) ? ' bg-light style-games single-post' : ''; ?>  
+    <?php echo in_array($controller, array('articles', 'cates')) ? ' bg-light' : ''; ?>  
           ">
 
         <!-- Preloader -->

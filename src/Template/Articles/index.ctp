@@ -19,17 +19,8 @@
                             <span>by</span>
                             <a href="#">HoangAnhOnline</a>
                         </li>
-                    </ul>
-
-                    <ul class="entry__meta">
-                        <li class="entry__meta-views">
-                            <i class="ui-eye"></i>
-                            <span>1356</span>
-                        </li>
-                        <li class="entry__meta-comments">
-                            <a href="#">
-                                <i class="ui-chat-empty"></i>13
-                            </a>
+                        <li class="entry__meta-date">
+                            <?php echo date('M d, Y', $data['created']);?>
                         </li>
                     </ul>
                 </div>
@@ -76,24 +67,24 @@
             </div> <!-- end newsletter wide -->
 
             <!-- Prev / Next Post -->
-<!--            <nav class="entry-navigation">
-                <div class="clearfix">
-                    <div class="entry-navigation--left">
-                        <i class="ui-arrow-left"></i>
-                        <span class="entry-navigation__label">Previous Post</span>
-                        <div class="entry-navigation__link">
-                            <a href="#" rel="next">How to design your first mobile app</a>
-                        </div>
-                    </div>
-                    <div class="entry-navigation--right">
-                        <span class="entry-navigation__label">Next Post</span>
-                        <i class="ui-arrow-right"></i>
-                        <div class="entry-navigation__link">
-                            <a href="#" rel="prev">Video Youtube format post. Made with WordPress</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>-->
+            <!--            <nav class="entry-navigation">
+                            <div class="clearfix">
+                                <div class="entry-navigation--left">
+                                    <i class="ui-arrow-left"></i>
+                                    <span class="entry-navigation__label">Previous Post</span>
+                                    <div class="entry-navigation__link">
+                                        <a href="#" rel="next">How to design your first mobile app</a>
+                                    </div>
+                                </div>
+                                <div class="entry-navigation--right">
+                                    <span class="entry-navigation__label">Next Post</span>
+                                    <i class="ui-arrow-right"></i>
+                                    <div class="entry-navigation__link">
+                                        <a href="#" rel="prev">Video Youtube format post. Made with WordPress</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>-->
 
             <!-- Author -->
             <div class="entry-author clearfix">
@@ -108,28 +99,28 @@
 
             <!-- Related Posts -->
             <?php if (!empty($data['relations'])): ?>
-            <section class="section related-posts mt-40 mb-0">
-                <div class="title-wrap title-wrap--line title-wrap--pr">
-                    <h3 class="section-title"><?php echo __('LABEL_RELATED_POST');?></h3>
-                </div>
+                <section class="section related-posts mt-40 mb-0">
+                    <div class="title-wrap title-wrap--line title-wrap--pr">
+                        <h3 class="section-title"><?php echo __('LABEL_RELATED_POST'); ?></h3>
+                    </div>
 
-                <!-- Slider -->
-                <div id="owl-posts-3-items" class="owl-carousel owl-theme owl-carousel--arrows-outside">
-                    <?php foreach ($data['relations'] as $rp): ?>
-                    <article class="entry thumb thumb--size-1">
-                        <div class="entry__img-holder thumb__img-holder" style="background-image: url('<?php echo $rp['image']; ?>');">
-                            <div class="bottom-gradient"></div>
-                            <div class="thumb-text-holder">   
-                                <h2 class="thumb-entry-title">
-                                    <a href="<?php echo $BASE_URL.'/tin-tuc/'.$rp['url'];?>"><?php echo $rp['name']; ?></a>
-                                </h2>
-                            </div>
-                            <a href="<?php echo $BASE_URL.'/tin-tuc/'.$rp['url'];?>" class="thumb-url"></a>
-                        </div>
-                    </article>
-                    <?php endforeach; ?>
-                </div> <!-- end slider -->
-            </section> 
+                    <!-- Slider -->
+                    <div id="owl-posts-3-items" class="owl-carousel owl-theme owl-carousel--arrows-outside">
+                        <?php foreach ($data['relations'] as $rp): ?>
+                            <article class="entry thumb thumb--size-1">
+                                <div class="entry__img-holder thumb__img-holder" style="background-image: url('<?php echo $rp['image']; ?>');">
+                                    <div class="bottom-gradient"></div>
+                                    <div class="thumb-text-holder">   
+                                        <h2 class="thumb-entry-title">
+                                            <a href="<?php echo $BASE_URL . '/tin-tuc/' . $rp['url']; ?>"><?php echo $rp['name']; ?></a>
+                                        </h2>
+                                    </div>
+                                    <a href="<?php echo $BASE_URL . '/tin-tuc/' . $rp['url']; ?>" class="thumb-url"></a>
+                                </div>
+                            </article>
+                        <?php endforeach; ?>
+                    </div> <!-- end slider -->
+                </section> 
             <?php endif; ?>
             <!-- end related posts -->            
 
